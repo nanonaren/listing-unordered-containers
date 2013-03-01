@@ -1,4 +1,4 @@
 listing-unordered-containers
 ============================
 
-Listing instance for unordered-containers
+See [listing](https://github.com/nanonaren/listing) for details.
