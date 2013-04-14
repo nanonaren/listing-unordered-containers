@@ -24,6 +24,7 @@ import qualified Data.HashMap.Strict as MS
 
 instance (Hashable a,Ord a) => Listing (HS.HashSet a) where
     type Elem (HS.HashSet a) = a
+    type Length (HS.HashSet a) = Int
     type Index (HS.HashSet a) = a
     type IndexElem (HS.HashSet a) = Bool
     toList = HS.toList
@@ -37,6 +38,7 @@ instance (Hashable a,Ord a) => Listing (HS.HashSet a) where
 
 instance (Hashable k,Eq k) => Listing (MS.HashMap k a) where
     type Elem (MS.HashMap k a) = (k,a)
+    type Length (MS.HashMap k a) = Int
     type Index (MS.HashMap k a) = k
     type IndexElem (MS.HashMap k a) = a
     toList = MS.toList

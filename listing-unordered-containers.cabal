@@ -4,7 +4,6 @@
 name:                listing-unordered-containers
 version:             0.1.0.0
 synopsis:            Listing instance for unordered-containers
--- description:         
 homepage:            https://github.com/nanonaren/listing-unordered-containers
 license:             BSD3
 license-file:        LICENSE
