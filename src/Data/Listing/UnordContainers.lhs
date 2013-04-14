@@ -32,6 +32,7 @@ instance (Hashable a,Ord a) => Listing (HS.HashSet a) where
     (!) = flip HS.member
     singleton = HS.singleton
     size = HS.size
+    empty = HS.empty
     null = HS.null
 
 instance (Hashable k,Eq k) => Listing (MS.HashMap k a) where
@@ -44,6 +45,7 @@ instance (Hashable k,Eq k) => Listing (MS.HashMap k a) where
     (!) = (MS.!)
     singleton (k,v) = MS.singleton k v
     size = MS.size
+    empty = MS.empty
     null = MS.null
 
 \end{code}
